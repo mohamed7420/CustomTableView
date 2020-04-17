@@ -13,6 +13,11 @@
 		BA1D87E124491858002A4F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1D87DF24491858002A4F34 /* Main.storyboard */; };
 		BA1D87E324491862002A4F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1D87E224491862002A4F34 /* Assets.xcassets */; };
 		BA1D87E624491862002A4F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1D87E424491862002A4F34 /* LaunchScreen.storyboard */; };
+		BA1D87EE24491902002A4F34 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1D87ED24491901002A4F34 /* DataModel.swift */; };
+		BA1D87F024491A92002A4F34 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1D87EF24491A92002A4F34 /* TableViewDataSource.swift */; };
+		BA1D87F324491C16002A4F34 /* TableViewDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1D87F124491C16002A4F34 /* TableViewDataCell.swift */; };
+		BA1D87F424491C16002A4F34 /* TableViewDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA1D87F224491C16002A4F34 /* TableViewDataCell.xib */; };
+		BA1D87F824492720002A4F34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1D87F724492720002A4F34 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		BA1D87E224491862002A4F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA1D87E524491862002A4F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1D87E724491862002A4F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1D87ED24491901002A4F34 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		BA1D87EF24491A92002A4F34 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		BA1D87F124491C16002A4F34 /* TableViewDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataCell.swift; sourceTree = "<group>"; };
+		BA1D87F224491C16002A4F34 /* TableViewDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDataCell.xib; sourceTree = "<group>"; };
+		BA1D87F724492720002A4F34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				BA1D87E224491862002A4F34 /* Assets.xcassets */,
 				BA1D87E424491862002A4F34 /* LaunchScreen.storyboard */,
 				BA1D87E724491862002A4F34 /* Info.plist */,
+				BA1D87ED24491901002A4F34 /* DataModel.swift */,
+				BA1D87EF24491A92002A4F34 /* TableViewDataSource.swift */,
+				BA1D87F124491C16002A4F34 /* TableViewDataCell.swift */,
+				BA1D87F224491C16002A4F34 /* TableViewDataCell.xib */,
+				BA1D87F724492720002A4F34 /* Constants.swift */,
 			);
 			path = CustomTableView;
 			sourceTree = "<group>";
@@ -128,6 +143,7 @@
 				BA1D87E624491862002A4F34 /* LaunchScreen.storyboard in Resources */,
 				BA1D87E324491862002A4F34 /* Assets.xcassets in Resources */,
 				BA1D87E124491858002A4F34 /* Main.storyboard in Resources */,
+				BA1D87F424491C16002A4F34 /* TableViewDataCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA1D87DE24491858002A4F34 /* ViewController.swift in Sources */,
+				BA1D87F324491C16002A4F34 /* TableViewDataCell.swift in Sources */,
+				BA1D87F024491A92002A4F34 /* TableViewDataSource.swift in Sources */,
+				BA1D87EE24491902002A4F34 /* DataModel.swift in Sources */,
 				BA1D87DA24491858002A4F34 /* AppDelegate.swift in Sources */,
 				BA1D87DC24491858002A4F34 /* SceneDelegate.swift in Sources */,
+				BA1D87F824492720002A4F34 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

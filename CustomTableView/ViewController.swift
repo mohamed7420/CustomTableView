@@ -9,12 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var items = [DataModel]()
+    
+    var tableViewDataSource: TableViewDataSource!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        Constants.setTableData(items: &items)
+        
+        tableViewDataSource = TableViewDataSource(self, tableView: tableView, items: items)
     }
-
-
+    
+    @IBAction func buttonEditTapped(_ sender: UIBarButtonItem) {
+        
+        tableView.isEditing = !tableView.isEditing
+        
+    }
+    
 }
 

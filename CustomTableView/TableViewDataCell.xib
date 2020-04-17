@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewDataCell" id="KGk-i7-Jjw" customClass="TableViewDataCell" customModule="CustomTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFO-yF-xeE">
+                        <rect key="frame" x="8" y="8" width="304" height="104"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="qvA-Rk-c67">
+                                <rect key="frame" x="0.0" y="0.0" width="91" height="104"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-ac-psv">
+                                <rect key="frame" x="99" y="0.0" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-Ya-m7I">
+                                <rect key="frame" x="99" y="29" width="200" height="70"/>
+                                <string key="text">A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qvA-Rk-c67" firstAttribute="top" secondItem="PFO-yF-xeE" secondAttribute="top" id="7wh-iz-s38"/>
+                            <constraint firstItem="qvA-Rk-c67" firstAttribute="width" secondItem="PFO-yF-xeE" secondAttribute="width" multiplier="0.3" id="9AW-0R-mPT"/>
+                            <constraint firstItem="Sj0-ac-psv" firstAttribute="leading" secondItem="qvA-Rk-c67" secondAttribute="trailing" constant="8" id="BZV-x3-mnc"/>
+                            <constraint firstItem="qvA-Rk-c67" firstAttribute="centerY" secondItem="PFO-yF-xeE" secondAttribute="centerY" id="Bga-d4-bWL"/>
+                            <constraint firstItem="Sj0-ac-psv" firstAttribute="top" secondItem="qvA-Rk-c67" secondAttribute="top" id="IUL-lW-ixd"/>
+                            <constraint firstAttribute="bottom" secondItem="qvA-Rk-c67" secondAttribute="bottom" id="bWz-lb-p8N"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kaY-Ya-m7I" secondAttribute="bottom" constant="5" id="iid-Zw-N8v"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sj0-ac-psv" secondAttribute="trailing" constant="20" id="oTL-yN-tpS"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kaY-Ya-m7I" secondAttribute="trailing" constant="5" id="pDP-Xk-MZt"/>
+                            <constraint firstItem="qvA-Rk-c67" firstAttribute="leading" secondItem="PFO-yF-xeE" secondAttribute="leading" id="puI-ls-Xbg"/>
+                            <constraint firstItem="kaY-Ya-m7I" firstAttribute="top" secondItem="Sj0-ac-psv" secondAttribute="bottom" constant="8" id="tiK-NF-3c3"/>
+                            <constraint firstItem="kaY-Ya-m7I" firstAttribute="leading" secondItem="qvA-Rk-c67" secondAttribute="trailing" constant="8" id="xDH-Ry-BMl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PFO-yF-xeE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JwU-td-mQJ"/>
+                    <constraint firstAttribute="trailing" secondItem="PFO-yF-xeE" secondAttribute="trailing" constant="8" id="gUL-zc-6zM"/>
+                    <constraint firstItem="PFO-yF-xeE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="uaK-dA-eXV"/>
+                    <constraint firstAttribute="bottom" secondItem="PFO-yF-xeE" secondAttribute="bottom" constant="8" id="ujb-8S-36v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelDescription" destination="kaY-Ya-m7I" id="lxU-pT-ITF"/>
+                <outlet property="labelTitle" destination="Sj0-ac-psv" id="i1Q-3t-uGm"/>
+                <outlet property="profileImage" destination="qvA-Rk-c67" id="8NX-pE-RyC"/>
+                <outlet property="roundedView" destination="PFO-yF-xeE" id="29a-tk-BP0"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img" width="275" height="183"/>
+    </resources>
+</document>
